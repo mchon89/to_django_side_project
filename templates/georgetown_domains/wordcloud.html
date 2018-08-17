@@ -1,0 +1,25 @@
+{% extends "georgetown_domains/header.html" %}
+
+
+{% block content %}
+
+
+<table>
+   <tr>
+      <td>
+      <p><strong>1. wordcloud, Non-Interactive</strong></p>
+        {% load static %}
+        <a href = "{% static 'georgetown_domains/wordcloud_1.png' %}">
+
+        <img src="{% static 'georgetown_domains/wordcloud_1.png' %}" height="300" width="500"></a>
+      </td>
+      <td>
+      <p>The visualization is generated using a module called WordCloud in Python3 to show a wordcloud of three particular Jane Austen's novels, "Emma", "Pride and Prejudice", and "Sense and Sensibility". The wordcloud displays Jane Austen's frequently used words in her novels and thru the wordcloud, it makes an audience easier to visually perceive the distribution of Ms. Austen's common words. Based on this wordcloud, a few relatively bigger words are easily seen; for instance, the words such as "Mr", "will", "love", are captured in the visual and her choice of the words in the novels reflects the emotions and inner-thoughts of the characters.  
+         <p><strong>The code and the dataset:</strong><a href = "https://github.com/mchon89/ANLY503/tree/master/wordcloud"> Click Here</a></p>
+      </td>
+   </tr>
+</table>
+
+
+
+{% endblock %}

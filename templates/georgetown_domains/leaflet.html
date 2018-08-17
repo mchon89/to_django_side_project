@@ -1,0 +1,25 @@
+{% extends "georgetown_domains/header.html" %}
+
+
+{% block content %}
+
+
+
+<table>
+   <tr>
+      <td>
+      <p><strong>1. Leaflet/R, Interactive</strong></p>
+        <a href="{% url 'leaflet' '1' %}">
+
+        {% load static %}
+        <img src="{% static "georgetown_domains/leaflet_1.png" %}" height="300" width="500"></a>
+      </td>
+      <td>
+      <p>The visualization is generated using a package called leaflet in R. As the basis of this interactive map, county-level unemployment data is plotted. In this particular case, a purple color is used and the intensity of the color represents the unemployment level on county; the stronger the color is, the higher the unemployment level is. As the second layer of this map, the locations of confederate symbols are plotted and depending on the location whether a confederate symbol is in North or South, a different color is used to differentiate. In this visual, red color represents South and green color represents North. The reason of this particular information layering is to see whether more confederate symbols tend to appear in counties with a higher unemployment level. From the visual, an obvious observation is that there are lots of confederate symbols disseminated throughout South but unemployment level has nothing with the number of confederate symbols around in county.</p>
+      <p><strong>The code and the dataset:</strong><a href = "https://github.com/mchon89/ANLY503/tree/master/leaflet"> Click Here</a></p>
+      </td>
+   </tr>
+</table>
+
+
+{% endblock %}

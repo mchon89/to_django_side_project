@@ -1,0 +1,41 @@
+{% extends "georgetown_domains/header.html" %}
+
+
+{% block content %}
+
+
+<table>
+   <tr>
+      <td>
+      <p><strong>1. Tableau, Interactive</strong></p>
+          <a href = "{% url 'tableau' '1' %}">
+
+
+        {% load static %}
+        <img src="{% static "georgetown_domains/tableau_1.png" %}" height="300" width="500"></a>
+    
+      </td>
+      <td>
+      <p>This compound visualization is created to explain the difference between the two most commonly occurring crime types in Chicago, Theft and Battery, utilizing different visualization techniques in Tableau. First, it finds a few most commonly occurring crime types in Chicago. In comparsion of these two crime types, battery is a lot more frequent on Friday and weekend but theft occurs the most on Friday, followed by Thursday. From the Time/Day analysis chart, one interesting pattern is that throughout a week, the count of battery increases at a sharp rate from Friday to Sun in 0:00-4:00AM time period. Also, battery is more frequent than theft as day goes by from Friday to Sunday. However, theft is more frequent than battery in 12:00-20:00PM.<p> 
+         <p><strong>The code and the dataset:</strong><a href="https://public.tableau.com/views/hw_2_2/Dashboard1?:embed=y&:display_count=yes" > Click Here</a></p>
+      </td>
+   </tr>
+
+   <tr>
+      <td>
+      <p><strong>2. Tableau, Interactive </strong></p>
+          <a href = "{% url 'tableau' '2' %}">
+
+
+        {% load static %}
+        <img src="{% static "georgetown_domains/tableau_2.png" %}" height="300" width="500"></a>
+      </td>
+      <td>
+      <p>This visualization is a story of Tableau, which is a sequence of visualizations that work together to convey information. It is created to find any hidden relationship among the features and deliver as much information as possible about the Las Vegas dataset, which includes quantitative and categorical features from online reviews from 21 hotels located in Las Vegas Strip, extracted from TripAdvisor and 504 reviews were collected between January and August of 2015. From this visualization, an interesting fact observed is that Encore Wynn Las Vegas received the highest average score given by the visitors from North America.<p> 
+         <p><strong>The code and the dataset:</strong><a href="https://public.tableau.com/views/mc2153_hw4/Story1?:embed=y&:display_count=yes"> Click Here</a></p>
+      </td>
+   </tr>
+</table>
+
+
+{% endblock %}

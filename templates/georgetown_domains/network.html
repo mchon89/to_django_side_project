@@ -1,0 +1,39 @@
+{% extends "georgetown_domains/header.html" %}
+
+
+{% block content %}
+
+
+<table>
+   <tr>
+      <td>
+      <p><strong>1. NetworkD3, Interactive</strong></p>
+        <a href="{% url 'network' '1' %}">
+
+        {% load static %}
+        <img src="{% static "georgetown_domains/network_1.png" %}" height="300" width="500"></a>
+      </td>
+      <td>
+      <p>This visualization is generated using NetworkD3 in R to display the network of the characters in the novel called "A Storm of Swords" written by George R.R. Martin. In the novel, it contains 353 weighted edges connecting 107 characters. Each edge in the network represents an interaction between one character and another. The visual represents the vast network of the interactions among all the characters in the novel.</p> 
+         <p><strong>The code and the dataset:</strong><a href = "https://github.com/mchon89/ANLY503/tree/master/network/1"> Click Here</a></p>
+      </td>
+   </tr>
+
+   <tr>
+      <td>
+      <p><strong>2. Non-NetworkD3, Interactive </strong></p>
+        <a href="{% url 'network' '2' %}">
+
+        {% load static %}
+        <img src="{% static "georgetown_domains/network_2.png" %}" height="300" width="500"></a>
+      </td>
+      <td>
+      <p>This visualization is produced using Plotly to display the network of the characters in the novel in a heatmap called "A Storm of Swords" written by George R.R. Martin. In a form of heatmap, the longer bar and the more bar are along the y-axis, the more the interaction is between the characters. Also, the color legend on the right describes the weight of an interaction between the characters. For instance, at Arya on the x-axis, the vertical bar can clearly be observed, meaning that Aray has lots of interactions among different characters in the novel. As the color intensity reaches to yellow color, the importance of the dynamics between the characters becomes more greater.</p> 
+         <p><strong>The code and the dataset:</strong><a href = "https://github.com/mchon89/ANLY503/tree/master/network/2"> Click Here</a></p>
+      </td>
+   </tr>
+</table>
+
+
+
+{% endblock %}

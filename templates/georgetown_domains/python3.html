@@ -1,0 +1,41 @@
+{% extends "georgetown_domains/header.html" %}
+
+
+{% block content %}
+
+
+<table>
+		<tr>
+		  <td>
+		  <p><strong>1. Bokeh/Python3, Interactive</strong></p>
+
+			  <a href="{% url 'python3' '1' %}">
+
+			  {% load static %}
+			  <img src="{% static "georgetown_domains/python3_1.png" %}" height="300" width="500"></a>
+		  
+		  </td>
+		  <td>
+		  <p>The visualization is created using Bokeh module in Python3 to display one-year average chart for each variable in the dataset, normalized gold price, normalized oil price, and CPI, and a chart to compare the prices and CPI using the bokeh tab widget. On the first three tabs, the charts show grey-colored circles, which are the one-year average of the variable in every year in the time frame, and the blue line, representing the normalized variable. An one noticeable observation is that gold price and oil look somewhat correlated because the general trends of both prices are very similiar to each other.<p> 
+			 <p><strong>The code and the dataset:</strong><a href = "https://github.com/mchon89/ANLY503/tree/master/python3/1"> Click Here</a></p>
+		  </td>
+		</tr>
+
+		<tr>
+		  <td>
+		  <p><strong>2. Bokeh/Python3, Interactive </strong></p>
+			  <a href="{% url 'python3' '2' %}">
+
+			  {% load static %}
+			  <img src="{% static "georgetown_domains/python3_2.png" %}" height="300" width="500"></a>
+			  
+		  </td>
+		  <td>
+		  <p>The visualization produced by Bokeh module in Python3 represents the number of people killed and injured in mass shooting between 2012 and 2016 on the map of the United States, excluding Hawaii and Alaska. It is created to show the severity of the casualty of innocent people by gun violence in the United States by different colors. The red color represents high casualty and the mild red color represents slightly lower casualty than the red color. In the meantime, the blue color means low causalty and the mild blue color means slightly higher casualty than the blue color.<p> 
+			 <p><strong>The code and the dataset:</strong><a href = "https://github.com/mchon89/ANLY503/tree/master/python3/2"> Click Here</a></p>
+		  </td>
+		</tr>
+</table>
+
+
+{% endblock %}
