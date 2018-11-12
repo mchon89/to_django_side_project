@@ -177,6 +177,33 @@ tr {
 	 text-align: top;
 }
 
+
+
+/* SEARCH BOX */ 
+
+
+
+input[type=text] {
+    width: 175px;
+    box-sizing: border-box;
+    border: 5px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+
+input[type=text]:focus {
+    width: 25%;
+}
+
+
 	</style>
 </head>
 
@@ -215,7 +242,6 @@ tr {
 				        {% load static %}
 				        
 
-
 				          <a href="{% static 'georgetown_domains/ggplot2_1.png' %}" target="_blank">Mutation vs Neoantigen</a>
 				          <a href="{% static 'georgetown_domains/ggplot2_2.png' %}" target="_blank">The Waffle Chart of CS languages</a>         
 				        </div>
@@ -247,15 +273,24 @@ tr {
 				    <li class="dropdown">  
 				      <a href="{% url 'wordcloud' %}" class="dropbtn">WordCloud</a>
 				        <div class="dropdown-content">
+				        
+
 				        {% load static %}
+
+
 				          <a href="{% static 'georgetown_domains/wordcloud_1.png' %}" target="_blank">Jane Austen wordcloud</a>
 				        </div>
 				    </li>
 
 				    <li class="dropdown">  
-				      <a href="{% url 'takehome_default' %}"  class="dropbtn">Take-Home Final</a>
+				      <a href="{% url 'takehome_default' %}" class="dropbtn">Take-Home Final</a>
 				    </li>
-			</ul>
+
+					<form>
+					  <input type="text" name="search" placeholder="Search">
+					</form>
+
+				</ul>
 
 
 
